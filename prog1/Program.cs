@@ -1,4 +1,4 @@
-﻿namespace prog1;
+namespace prog1;
 
 using System;
 
