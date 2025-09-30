@@ -1,4 +1,4 @@
-﻿namespace OOPBasic;
+﻿namespace prog1;
 
 using System;
 
