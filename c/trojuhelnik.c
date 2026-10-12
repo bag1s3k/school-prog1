@@ -44,7 +44,7 @@ int main(void) {
     if (x * x + y * y == z * z) {
         printf("- je pravouhly (S = %.2f)\n", x * y / 2.0);
 
-        printf("- prepona je 'z', odvesny jsou 'x' a 'y'");
+        printf("- prepona je '%d', odvesny jsou '%d' a '%d'\n", z, y, x);
     } else {
         printf("- neni pravouhly\n");
 
