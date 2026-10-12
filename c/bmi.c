@@ -14,6 +14,9 @@ int main(void) {
     if (height == 0) {
         printf("Dividing by zero!!!\n");
         return 1;
+    } else if (height < 1) {
+        printf("Enter height above 1m!!!\n");
+        return 1;
     }
 
     float result = weight / (height * height);
