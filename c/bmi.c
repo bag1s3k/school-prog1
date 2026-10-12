@@ -11,6 +11,11 @@ int main(void) {
         return 1;
     }
 
+    if (height == 0) {
+        printf("Dividing by zero!!!\n");
+        return 1;
+    }
+
     float result = weight / (height * height);
 
     if (gender == 'w')
