@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-void swap(float *a, float *b) {
-    float tmp = *a;
+void swap(int *a, int *b) {
+    int tmp = *a;
     *a = *b;
     *b = tmp;
 }
 
 int main(void) {
     printf("Zadej rozmery ve formatu: 'x y z': ");
-    float x, y, z;
+    int x, y, z;
 
-    if (scanf("%f %f %f", &x, &y, &z) != 3) {
+    if (scanf("%d %d %d", &x, &y, &z) != 3) {
         printf("Incorrect input!!!\n");
         return 1;
     }
@@ -42,7 +42,9 @@ int main(void) {
     }
 
     if (x * x + y * y == z * z) {
-        printf("- je pravouhly (S = %.2f)\n", x * y / 2);
+        printf("- je pravouhly (S = %.2f)\n", x * y / 2.0);
+
+        printf("- prepona je 'z', odvesny jsou 'x' a 'y'");
     } else {
         printf("- neni pravouhly\n");
 
@@ -52,8 +54,6 @@ int main(void) {
             printf("- je tupouhly\n");
         }
     }
-
-    printf("- prepona je 'z', odvesny jsou 'x' a 'y'");
 
     return 0;
 }
