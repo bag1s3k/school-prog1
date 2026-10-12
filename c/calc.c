@@ -27,7 +27,7 @@ int main(void) {
         return 1;
     }
 
-    printf("%.2f %c %.2f = %.2f\n", a, o, b, result);
+    printf("%f %c %f = %.5f\n", a, o, b, result);
 
     return 0;
 }
