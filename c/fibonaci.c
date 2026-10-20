@@ -8,15 +8,15 @@ int main(void) {
         return 1;
     }
 
-    int x = 0, y = 1, next;
+    int x = 0, y = 1;
 
     for (int i = 0; i < index - 1; i++) {
-        next = x + y;
+        int next = x + y;
         x = y;
         y = next;
     }
 
-    printf("Result: %d", next);
+    printf("Result: %d", index == 0 ? 0 : y);
 
     return 0;
 }
