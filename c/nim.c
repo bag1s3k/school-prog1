@@ -29,7 +29,7 @@ int main(void) {
 
         space--;
 
-        if (amount < 1 || space > spaces[space] || spaces[space] - amount < 0) {
+        if (space < 0 || space >= 3 || amount < 1 || amount > spaces[space]) {
             printf("Invalid Move!!!\n");
         } else {
             spaces[space] -= amount;
@@ -47,7 +47,7 @@ int main(void) {
             break;
     }
 
-    int winner = (active_user < 0) ? 2 : 1;
+    int winner = (active_user < 0) ? 1 : 2;
 
     printf("User %d has won\n", winner);
 
