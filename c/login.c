@@ -7,7 +7,7 @@ struct User {
 };
 
 int main(void) {
-    const int ATTEMPTS_CEIL = 3;
+    const int ATTEMPTS_CEIL = 4;
     struct User users[] = {{"admin", "123"}, {"sysadmin", "321"}};
     char username_input[255];
     char password_input[255];
