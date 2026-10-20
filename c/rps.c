@@ -21,9 +21,9 @@ int main(void) {
     if (player == pc)
         printf("Draw\n");
     else if ((player - pc) % 3 == 1)
-        printf("You won\n");
+        printf("You won (pc had %d)\n", (int)pc);
     else
-        printf("You lost\n");
+        printf("You lost (pc had %d)\n", (int)pc);
 
     return 0;
 }
