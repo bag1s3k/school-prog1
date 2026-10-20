@@ -31,7 +31,10 @@ int main(void) {
 
     for (int i = 0; i < ATTEMPTS_CEIL; i++) {
         printf("Password: ");
-        scanf("%s", password_input);
+        if (scanf("%s", password_input) != 1) {
+            printf("Invalid Input!!!\n");
+            return 1;
+        }
 
         if (strcmp(password_input, found_user->password) == 0) {
             printf("You're logged in\n");
