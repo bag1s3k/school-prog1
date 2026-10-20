@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-enum Choice { ROCK, SPOCK, PAPER, LIZARD, SCISSORS };
+enum Choice { ROCK, SPOCK, PAPER, TAPIR, SCISSORS };
 
 int main(void) {
     srand((unsigned int)time(NULL));
@@ -23,7 +23,7 @@ int main(void) {
 
     if (result == 0)
         printf("Draw\n");
-    else if (result == 1 || result == 3)
+    else if (result == 1 || result == 2)
         printf("You won (pc had %d)\n", (int)pc);
     else
         printf("You lost (pc had %d)\n", (int)pc);
